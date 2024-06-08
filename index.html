@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Annie</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="yo.jpg" alt="">
+            </div>
+            <h1>ANNIE OSORIO</h1>
+            <h2>Estudiante Desarrollo de Software</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Annie Osorio.</span> Estudiante de Desarrollo de Software apasionada por la tecnología y la innovación. Actualmente, estoy cursando mi cuarto semestre de la carrera, durante el cual he adquirido diversas habilidades en programación, análisis de sistemas y desarrollo de aplicaciones web. Mi enfoque principal es crear soluciones tecnológicas eficientes y escalables que puedan mejorar la vida de las personas y optimizar procesos. Aquí en mi portafolio, encontrarás una selección de mis proyectos más destacados, cada uno reflejando mi compromiso con la calidad y la mejora continua. ¡Gracias por visitar mi portafolio y espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo!</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            28-01-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3122198719
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            natalia.osorio2@utp.edu.co
+                        </li>
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Colombiana
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>COMPUTADORAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-language"></i>
+                            <span>IDIOMAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-stethoscope"></i>
+                            <span>MEDICINA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                <!-- SECCION SKILLS 
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            -->
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>LENGUAJES DE PROGRAMACIÓN</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3> </h3>
+                    <div class="skill">
+                        <span>Visual Basic</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>R</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular Framework</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>PRIMARIA</h4>
+                        <span class="casa">Liceo Bilingue el Poblado</span>
+                        <span class="fecha">2010 - 2016</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>BACHILLER</h4>
+                        <span class="casa">Liceo Bilingue el Poblado</span>
+                        <span class="fecha">2017 - 2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>INGLÉS B2</h4>
+                        <span class="casa">Academia English WorldWide</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Junior Frontend</h4>
+                        <span class="casa">SindeSoft</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Desarrolladora Frontend Junior, encargada de crear páginas web para llevar una gestión adecuada de diversos recursos de una empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar Administrativa</h4>
+                        <span class="casa">Secretaría de Salud, Pereira</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>Encargada de llevar directamente y en orden las visitas a familias priorizadas, así como su estado en el hogar y condiciones para llevar un control adecuado de las mismas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar Contable</h4>
+                        <span class="casa">Gestión y Soluciones, España</span>
+                        <span class="fecha">2024 - ACTUALIDAD</span>
+                        <p>Encargada de llevar la contabilidad de tarjetas, facturas y gastos de diversos clientes para los que trabaja la empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>PROYECTOS</h3>
+                    <div class="item izq">
+                        <h4>FORMULARIO CONTROL DE EQUIPOS</h4>
+                        <span class="fecha">2022</span>
+                        <p>Formulario creado en aplicación existente de empresa de seguridad para llevar control de equipos funcionales. Desarrollado en Angular Framework, HTML, CSS y Javascript.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>FORMULARIO CONTROL DE VEHÍCULOS</h4>
+                        <span class="fecha">2022</span>
+                        <p>Formulario creado en aplicación existente de empresa de seguridad con el fin de llevar control de los vehículos en la empresa. Desarrollado en Angular Framework, HTML, CSS y Javascript.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SISTEMA PARA TIENDA ONLINE</h4>
+                        <span class="fecha">2023</span>
+                        <p>Sistema creado para tienda Online para llevar un control adecuado de ventas e inventario. Desarrollado en C.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>PROYECTOS</h3>
+                    <div class="item der">
+                        <h4>SISTEMA TAQUILLA DE ACUARIO</h4>
+                        <span class="fecha">2023</span>
+                        <p>Sistema creado para Acuario con el fin de poder hacer compras y reservaciones en línea. Desarrollado en Python.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>SISTEMA DE CITAS PARA CLÍNICA</h4>
+                        <span class="fecha">2024</span>
+                        <p>Sistema creado con el fin de llevar a cabo un mejor manejo de citas para una clínica, facilitando así, la gestión de las mismas. Desarrollado en Python.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>ESPECIFICACIÓN DE REQUERIMIENTOS</h4>
+                        <span class="fecha">2024</span>
+                        <p>Documento elaborado con el fin de describir el diseño para crear un software para una panadería, definiendo sus requerimientos y especificaciones necesarias para llevar a cabo el proyecto.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
